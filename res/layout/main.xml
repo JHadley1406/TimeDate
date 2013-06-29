@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="time" />
+
+    <Button
+        android:id="@+id/dayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/time"
+        android:layout_marginTop="30dp"
+        android:text="day" />
+
+    <Button
+        android:id="@+id/yearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/day"
+        android:layout_marginTop="30dp"
+        android:text="year" />
+
+    <Button
+        android:id="@+id/monthButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/year"
+        android:layout_marginTop="30dp"
+        android:text="month" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time"
+        android:layout_alignBottom="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/dayView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/day"
+        android:layout_alignBottom="@+id/day"
+        android:layout_alignLeft="@+id/textView1"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/yearView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/year"
+        android:layout_alignBottom="@+id/year"
+        android:layout_alignLeft="@+id/textView2"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/monthView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/month"
+        android:layout_alignBottom="@+id/month"
+        android:layout_alignRight="@+id/textView3"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
